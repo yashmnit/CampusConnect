@@ -11,13 +11,11 @@ Built to solve a real problem we saw on campus: everyone's always rushing betwee
 ## Features
 
 - **Auth with JWT**: sign up / log in, protected routes, token-based sessions
-- **Post an errand**: describe the task, pickup/drop location, and an optional reward
+- **Post an errand**: describe the task, pickup/drop location
 - **Browse & accept errands**: see what's open on campus and take one on
 - **Real-time chat**: Socket.io powered messaging between the requester and the helper
-- **Live status updates**: errands move from open → accepted → completed without refreshing
 - **Responsive UI**: works on phone, since that's where people will actually use it
 
-> Trim or edit this list to match exactly what's shipped.
 
 ## Tech Stack
 
@@ -119,7 +117,7 @@ campus-connect/
 | PATCH | `/api/errands/:id/accept` | Accept an errand (auth required) |
 | PATCH | `/api/errands/:id/complete` | Mark an errand complete (auth required) |
 
-> Update routes to match your actual backend.
+
 
 ### Socket events
 
